@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sharanya Godishala</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        h1 {
+            font-size: 36px;
+            color: #8e44ad;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .skills, .hobbies {
+            margin-top: 30px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hello! I'm Sharanya Godishala, a passionate student pursuing a Bachelor's degree in Computer Science Engineering and an avid IT enthusiast, and being a dynamic blend of skills
+and knowledge in two ever-evolving domains. Very much interested in writing Blogs. Eager to contribute my skills and enthusiasm to a dynamic team in a challenging professional environment.</p>
+        <div class="skills">
+            <h2>Skills</h2>
+            <p>Python, C, Java, Web Development, Data Analytics, Cybersecurity, Problem-Solving</p>
+        </div>
+
+        <div class="hobbies">
+            <h2>Hobbies</h2>
+            <p>Reading Tech Blogs, Coding Challenges, Exploring AI, Traveling</p>
+        </div>
+
+        <a href="home.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <script>
+        gsap.to(".container", { opacity: 1, duration: 1, y: 0 });
+    </script>
+
+</body>
+</html>
+
+

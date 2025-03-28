@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sharanya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .project-container {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        .project {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>My Projects</header>
+    <div class="project-container">
+        <div class="project">
+            <h2>CONTACT MANAGEMENT SYSTEM</h2>
+            <p>Developing a C Application to store details and phone numbers in terms of names. Store the data in a dynamically allocated memory of a structure. For this Project I have collected data and information about the requirements and many.</p>
+        </div>
+     <div class="project-container">
+        <div class="project">
+            <h2>BUS STOP DETECTOR AND STUDENT IDENTIFICATION</h2>
+            <p>The main aim of the project to design a low cost smart system for student identification and bus stop detector. This framework is invented to help the student and give the information to driver when the stop is arrived. Additionally this idea is favourable for students, when the driver forgets a bus stop and to avoid other people entering into the bus. I have played the role of  analysing and writing the  description of the project.</p>
+         </div>
+     </div>
+     <div class="project-container">
+     	<div class="project">
+            <h2>RESUME GENERATOR</h2>
+            <p>Our project, the resume generator, aims to streamline the process of creating professional resumes. By leveraging advanced language processing and design capabilities, the tool automatically extracts relevant information from user input and generates well-structured resumes tailored to specific job roles. The goal is to save users time and effort while ensuring their resumes effectively highlight their skills and experiences. The generator also provides customization options, allowing users to fine-tune the output to meet their preferences. Overall, our project seeks to empower individuals in showcasing their qualifications and landing their desired job opportunities with ease.</p>
+            </div>
+     </div>
+     <div class="project-container">
+     	<div class="project">
+           <h2>IBM HR Analytics on Employee Attrition & Performance </h2>
+           <p> Our project demonstrates the effectiveness of machine learning techniques in predicting employee attrition and providing actionable insights for HR management. By leveraging predictive analytics, organizations can proactively address attrition and foster a more stable and engaged workforce.</p>
+        </div>
+    </div>
+
+    <a href="home.html" class="btn">Back to Home</a>
+
+    <script>
+        gsap.from(".project", { opacity: 0, duration: 1, y: 50, stagger: 0.3 });
+    </script>
+</body>
+</html>
