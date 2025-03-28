@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -18,7 +19,7 @@
             text-align: center;
         }
         .container {
-            max-width: 600px;
+            max-width: 500px;
             margin: 50px auto;
             padding: 20px;
             background: rgba(255, 255, 255, 0.1);
@@ -28,12 +29,12 @@
         }
         h1 {
             color: #f8f9fa;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 600;
         }
         .contact-info {
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.8;
             text-align: left;
             padding-left: 20px;
@@ -59,18 +60,22 @@
         .contact-info a:hover {
             color: #ffcc00;
         }
-        .contact-icon img {
-            width: 28px;
-            height: 28px;
+        .contact-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
             transition: transform 0.3s ease-in-out;
         }
-        .contact-icon img:hover {
-            transform: scale(1.1) rotate(10deg);
+        .contact-item img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .contact-icon {
+            font-size: 24px;
         }
         .back-btn {
             display: inline-block;
             margin-top: 20px;
-            padding: 12px 25px;
+            padding: 10px 20px;
             background: #f39c12;
             color: white;
             text-decoration: none;
@@ -93,7 +98,7 @@
                 <a href="https://www.linkedin.com/in/sharanya-godishala-a16998313" target="_blank">LinkedIn</a>
             </div>
             <div class="contact-item">
-                <img src="github.jpeg" alt="LinkedIn">
+                <img src="github.jpeg" alt="GitHub">
                 <a href="https://github.com/sharanya1236" target="_blank">GitHub</a>
             </div>
             <div class="contact-item">
