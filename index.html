@@ -1,96 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharanya's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            text-align: center;
-        }
-        header {
-            padding: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-        }
-        .profile-container {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #ddd;
-            margin: 0 auto 20px;
-            border: 5px solid #fff;
-        }
-        .profile-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        h1 {
-            font-size: 42px;
-            font-weight: bold;
-            color: #f8f9fa;
-        }
-        p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            color: #dcdcdc;
-        }
-        .buttons-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .btn {
-            padding: 15px 30px;
-            font-size: 20px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        .about-btn { background: #8e44ad; }
-        .resume-btn { background: #f39c12; }
-        .projects-btn { background: #e74c3c; }
-        .contact-btn { background: #3498db; }
-        .btn:hover {
-            opacity: 0.8;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="profile-container">
-            <img src="your-image.jpg" alt="Sharanya Godishala" class="profile-image">
-        </div>
-        <h1>Heyy! I am Sharanya Godishala</h1>
-        <p>I am a Computer Science Student, passionate about AI, Cybersecurity, and problem-solving.</p>
-        <div class="buttons-container">
-            <a href="about.html" class="btn about-btn">About</a>
-            <a href="SharanyaResume.pdf" class="btn resume-btn" download>Resume</a>
-            <a href="projects.html" class="btn projects-btn">Projects</a>
-            <a href="contactt.html" class="btn contact-btn">Contact</a>
-        </div>
-    </header>
-    <script>
-        gsap.from("h1, p, .buttons-container", { opacity: 0, duration: 1, y: 20, stagger: 0.3 });
-    </script>
-</body>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Sharanya's Portfolio</title>     
+    <link rel="stylesheet" href="styles.css">     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>     
+    <style>         
+        body {             
+            font-family: Arial, sans-serif;             
+            margin: 0;             
+            padding: 0;             
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);             
+            color: #fff;             
+            text-align: center;         
+        }         
+        header {             
+            padding: 50px;             
+            background: rgba(255, 255, 255, 0.1);             
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);             
+            backdrop-filter: blur(10px);         
+        }         
+        .profile-container {             
+            width: 350px;             
+            height: 350px;             
+            border-radius: 50%;             
+            overflow: hidden;             
+            display: flex;             
+            justify-content: center;             
+            align-items: center;             
+            background: #ddd;             
+            margin: 0 auto 20px;             
+            border: 5px solid #fff;             
+            transition: transform 0.3s ease-in-out;         
+        }         
+        .profile-container:hover {             
+            transform: scale(1.05);         
+        }         
+        .profile-image {             
+            width: 100%;             
+            height: 100%;             
+            object-fit: cover;             
+            transition: opacity 0.5s ease-in-out;         
+        }         
+        h1 {             
+            font-size: 42px;             
+            font-weight: bold;             
+            color: #f8f9fa;         
+        }         
+        p {             
+            font-size: 20px;             
+            margin-bottom: 30px;             
+            color: #dcdcdc;         
+        }         
+        .buttons-container {             
+            display: flex;             
+            justify-content: center;             
+            gap: 20px;             
+            margin-top: 20px;         
+        }         
+        .btn {             
+            padding: 15px 30px;             
+            font-size: 20px;             
+            border: none;             
+            border-radius: 50px;             
+            cursor: pointer;             
+            transition: transform 0.3s, opacity 0.3s;             
+            text-decoration: none;             
+            color: white;             
+            font-weight: bold;         
+        }         
+        .about-btn { background: #8e44ad; }         
+        .resume-btn { background: #f39c12; }         
+        .projects-btn { background: #e74c3c; }         
+        .contact-btn { background: #3498db; }         
+        .btn:hover {             
+            opacity: 0.8;             
+            transform: scale(1.1);         
+        }     
+    </style> 
+</head> 
+<body>     
+    <header>         
+        <div class="profile-container">             
+            <img src="your-image.jpg" alt="Sharanya Godishala" class="profile-image">         
+        </div>         
+        <h1>Heyy! I am Sharanya Godishala</h1>         
+        <p>I am a Computer Science Student, passionate about AI, Cybersecurity, and problem-solving.</p>         
+        <div class="buttons-container">             
+            <a href="about.html" class="btn about-btn">About</a>             
+            <a href="SharanyaResume.pdf" class="btn resume-btn" download>Resume</a>             
+            <a href="projects.html" class="btn projects-btn">Projects</a>             
+            <a href="contactt.html" class="btn contact-btn">Contact</a>         
+        </div>     
+    </header>     
+    <script>         
+        gsap.from("h1, p, .buttons-container", { opacity: 0, duration: 1, y: 20, stagger: 0.3 });     
+    </script> 
+</body> 
 </html>
